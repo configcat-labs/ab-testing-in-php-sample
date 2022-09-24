@@ -46,166 +46,200 @@
 
     <div class="flex products">
       <div class="product-card flex">
-        <img src="/images/image_1.png" alt="">
-        <div class="product-details">
-          <p class="product-description">ZW PREMIUM THE 90S</p>
-          <div class="product-card-footer flex">
-            @if ($canShowProductPrice)
-            <div>$16.99 USD</div>
-            @else
-            <button class='button view-more-button'>View More</button>
-            @endif
-            <button class="button add-to-cart-button">Add to cart</button>
-          </div>
-        </div>
-      </div>
-      <div class="product-card flex">
-        <img src="/images/image_2.png" alt="">
+        <img class="product-image" src="/images/image_2.png" alt="">
         <div class="product-details">
           <p class="product-description">HEELED LEATHER SANDALS WITH PADDED STRAP</p>
+          @if ($canShowProductPrice)
+          <div class="product-price">$16.99 CAD</div>
+          @endif
           <div class="product-card-footer flex">
-            <button class="button view-more-button">View More</button>
-            <button class="button add-to-cart-button">Add to cart</button>
+            <button class='button view-more-button'>View More</button>
+            <button class="button add-to-cart-button">
+              <img src="/icons/cart-plus-solid.svg" width="20" alt="">
+            </button>
           </div>
         </div>
       </div>
       <div class="product-card flex">
-        <img src="/images/image_3.png" alt="">
+        <img class="product-image" src="/images/image_2.png" alt="">
+        <div class="product-details">
+          <p class="product-description">HEELED LEATHER SANDALS WITH PADDED STRAP</p>
+          <!-- @if ($canShowProductPrice)
+          <div class="product-price">$27.99 CAD</div>
+          @endif -->
+          <div class="product-card-footer flex">
+            <button class="button view-more-button">View More</button>
+            <button class="button add-to-cart-button">
+              <img src="/icons/cart-plus-solid.svg" width="20" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card flex">
+        <img class="product-image" src="/images/image_3.png" alt="">
         <div class="product-details">
           <p class="product-description">TWEED BLAZER</p>
           <div class="product-card-footer flex">
             <button class="button view-more-button">View More</button>
-            <button class="button add-to-cart-button">Add to cart</button>
+            <button class="button add-to-cart-button">
+              <img src="/icons/cart-plus-solid.svg" width="20" alt="">
+            </button>
           </div>
         </div>
       </div>
       <div class="product-card flex">
-        <img src="/images/image_4.png" alt="">
+        <img class="product-image" src="/images/image_4.png" alt="">
         <div class="product-details">
           <p class="product-description">CUT OUT TOP</p>
           <div class="product-card-footer flex">
             <button class="button view-more-button">View More</button>
-            <button class="button add-to-cart-button">Add to cart</button>
+            <button class="button add-to-cart-button">
+              <img src="/icons/cart-plus-solid.svg" width="20" alt="">
+            </button>
           </div>
         </div>
       </div>
       <div class="product-card flex">
-        <img src="/images/image_5.png" alt="">
+        <img class="product-image" src="/images/image_5.png" alt="">
         <div class="product-details">
           <p class="product-description">COMBINATION STRIPED SWEATER</p>
           <div class="product-card-footer flex">
             <button class="button view-more-button">View More</button>
-            <button class="button add-to-cart-button">Add to cart</button>
+            <button class="button add-to-cart-button">
+              <img src="/icons/cart-plus-solid.svg" width="20" alt="">
+            </button>
           </div>
         </div>
       </div>
       <div class="product-card flex">
-        <img src="/images/image_6.png" alt="">
+        <img class="product-image" src="/images/image_6.png" alt="">
         <div class="product-details">
           <p class="product-description">SQUARE TOE HEELED ASYMMETRIC LEATHER SANDALS</p>
           <div class="product-card-footer flex">
             <button class="button view-more-button">View More</button>
-            <button class="button add-to-cart-button">Add to cart</button>
+            <button class="button add-to-cart-button">
+              <img src="/icons/cart-plus-solid.svg" width="20" alt="">
+            </button>
           </div>
         </div>
       </div>
       <div class="product-card flex">
-        <img src="/images/image_7.png" alt="">
+        <img class="product-image" src="/images/image_7.png" alt="">
         <div class="product-details">
           <p class="product-description">CUT OUT TOP</p>
           <div class="product-card-footer flex">
             <button class="button view-more-button">View More</button>
-            <button class="button add-to-cart-button">Add to cart</button>
+            <button class="button add-to-cart-button">
+              <img src="/icons/cart-plus-solid.svg" width="20" alt="">
+            </button>
           </div>
         </div>
       </div>
       <div class="product-card flex">
-        <img src="/images/image_8.png" alt="">
+        <img class="product-image" src="/images/image_8.png" alt="">
         <div class="product-details">
           <p class="product-description">ANIMAL PRINT CUT-OUT CROSSBODY BAG</p>
           <div class="product-card-footer flex">
             <button class="button view-more-button">View More</button>
-            <button class="button add-to-cart-button">Add to cart</button>
+            <button class="button add-to-cart-button">
+              <img src="/icons/cart-plus-solid.svg" width="20" alt="">
+            </button>
           </div>
         </div>
       </div>
       <div class="product-card flex">
-        <img src="/images/image_9.png" alt="">
+        <img class="product-image" src="/images/image_9.png" alt="">
         <div class="product-details">
           <p class="product-description">PRINTED RUSTIC DRESS</p>
           <div class="product-card-footer flex">
             <button class="button view-more-button">View More</button>
-            <button class="button add-to-cart-button">Add to cart</button>
+            <button class="button add-to-cart-button">
+              <img src="/icons/cart-plus-solid.svg" width="20" alt="">
+            </button>
           </div>
         </div>
       </div>
       <div class="product-card flex">
-        <img src="/images/image_10.png" alt="">
+        <img class="product-image" src="/images/image_10.png" alt="">
         <div class="product-details">
           <p class="product-description">WOVEN LEATHER HEELED TIE SANDALS</p>
           <div class="product-card-footer flex">
             <button class="button view-more-button">View More</button>
-            <button class="button add-to-cart-button">Add to cart</button>
+            <button class="button add-to-cart-button">
+              <img src="/icons/cart-plus-solid.svg" width="20" alt="">
+            </button>
           </div>
         </div>
       </div>
       <div class="product-card flex">
-        <img src="/images/image_11.png" alt="">
+        <img class="product-image" src="/images/image_11.png" alt="">
         <div class="product-details">
           <p class="product-description">OVERSIZED BLAZER</p>
           <div class="product-card-footer flex">
             <button class="button view-more-button">View More</button>
-            <button class="button add-to-cart-button">Add to cart</button>
+            <button class="button add-to-cart-button">
+              <img src="/icons/cart-plus-solid.svg" width="20" alt="">
+            </button>
           </div>
         </div>
       </div>
       <div class="product-card flex">
-        <img src="/images/image_12.png" alt="">
+        <img class="product-image" src="/images/image_12.png" alt="">
         <div class="product-details">
           <p class="product-description">REMOVABLE WALLET CORD DETAIL CROSSBODY BAG</p>
           <div class="product-card-footer flex">
             <button class="button view-more-button">View More</button>
-            <button class="button add-to-cart-button">Add to cart</button>
+            <button class="button add-to-cart-button">
+              <img src="/icons/cart-plus-solid.svg" width="20" alt="">
+            </button>
           </div>
         </div>
       </div>
       <div class="product-card flex">
-        <img src="/images/image_13.png" alt="">
+        <img class="product-image" src="/images/image_13.png" alt="">
         <div class="product-details">
           <p class="product-description">SLOUCHY PANTS</p>
           <div class="product-card-footer flex">
             <button class="button view-more-button">View More</button>
-            <button class="button add-to-cart-button">Add to cart</button>
+            <button class="button add-to-cart-button">
+              <img src="/icons/cart-plus-solid.svg" width="20" alt="">
+            </button>
           </div>
         </div>
       </div>
       <div class="product-card flex">
-        <img src="/images/image_14.png" alt="">
+        <img class="product-image" src="/images/image_14.png" alt="">
         <div class="product-details">
           <p class="product-description">LEATHER JACKET</p>
           <div class="product-card-footer flex">
             <button class="button view-more-button">View More</button>
-            <button class="button add-to-cart-button">Add to cart</button>
+            <button class="button add-to-cart-button">
+              <img src="/icons/cart-plus-solid.svg" width="20" alt="">
+            </button>
           </div>
         </div>
       </div>
       <div class="product-card flex">
-        <img src="/images/image_15.png" alt="">
+        <img class="product-image" src="/images/image_15.png" alt="">
         <div class="product-details">
           <p class="product-description">HEELED LEATHER SQUARE TOE SANDALS</p>
           <div class="product-card-footer flex">
             <button class="button view-more-button">View More</button>
-            <button class="button add-to-cart-button">Add to cart</button>
+            <button class="button add-to-cart-button">
+              <img src="/icons/cart-plus-solid.svg" width="20" alt="">
+            </button>
           </div>
         </div>
       </div>
       <div class="product-card flex">
-        <img src="/images/image_16.png" alt="">
+        <img class="product-image" src="/images/image_16.png" alt="">
         <div class="product-details">
           <p class="product-description">ANIMAL PRINT TOTE BAG WITH CHAIN</p>
           <div class="product-card-footer flex">
             <button class="button view-more-button">View More</button>
-            <button class="button add-to-cart-button">Add to cart</button>
+            <button class="button add-to-cart-button">
+              <img src="/icons/cart-plus-solid.svg" width="20" alt="">
+            </button>
           </div>
         </div>
       </div>
