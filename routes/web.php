@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 //  Import the autoload.php file which includes the SDK we installed
-require '../vendor/autoload.php';
+require dirname(__DIR__)."/vendor/autoload.php";
 
 Route::get('/', function () {
 
