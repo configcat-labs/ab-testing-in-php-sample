@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
   <title>ZSTRA Clothing</title>
   <link rel="stylesheet" href="../css/app.css">
 </head>
+
 <body>
   <div class="container">
     <div class="flex navbar">
@@ -48,10 +50,13 @@
         <div class="product-details">
           <p class="product-description">ZW PREMIUM THE 90S</p>
           <div class="product-card-footer flex">
-            <button class="button view-more-button">View More</button>
+            @if ($canShowProductPrice)
+            <div>$16.99 USD</div>
+            @else
+            <button class='button view-more-button'>View More</button>
+            @endif
             <button class="button add-to-cart-button">Add to cart</button>
           </div>
-
         </div>
       </div>
       <div class="product-card flex">
