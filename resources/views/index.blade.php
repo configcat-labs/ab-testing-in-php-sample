@@ -53,7 +53,7 @@
           <div class="product-price">$16.99 CAD</div>
           @endif
           <div class="product-card-footer flex">
-            <button class='button view-more-button'>View More</button>
+            <button onclick="handleProductViewClick()" class='button view-more-button'>View More</button>
             <button class="button add-to-cart-button">
               <img src="/icons/cart-plus-solid.svg" width="20" alt="">
             </button>
@@ -253,6 +253,20 @@
     <a href="#">Next</a>
   </div>
 
+  <script>
+    function handleProductViewClick() {
+      // TODO: Complete the below
+      let data = {name: "chavez"}
+      fetch("https://api.amplitude.com/2/httpapi", {
+        method: "POST",
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data)
+      }).then(res => {
+        console.log('Request complete!', res)
+      })
+
+    }
+  </script>
 </body>
 
 <footer class="container">
