@@ -300,7 +300,7 @@
     <div>
       <h4>Product</h4>
       <nav>
-        <a href="#">BAZAR World</a>
+        <a href="#">ZSTRA World</a>
         <a href="#">Women</a>
         <a href="#">Men</a>
       </nav>
