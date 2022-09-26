@@ -254,15 +254,41 @@
   </div>
 
   <script>
+    // Function to generate a random unique user identifier
+    function generateUUID() {
+      let dateTime = new Date().getTime();
+      const uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        let random = (dateTime + Math.random() * 16) % 16 | 0;
+        dateTime = Math.floor(dateTime / 16);
+        return (c == 'x' ? random : (random & 0x3 | 0x8)).toString(16);
+      })
+      return uuid;
+    }
+
     function handleProductViewClick() {
-      // TODO: Complete the below
-      let data = {name: "chavez"}
+      const user_id = generateUUID();
+
+      // HTTP POST request body:
+      let data = {
+        "api_key": "YOUR_AMPLITUDE_API_KEY",
+        "events": [{
+          "user_id": user_id,
+          "event_type": "product_view_click"
+        }]
+      }
+
       fetch("https://api.amplitude.com/2/httpapi", {
         method: "POST",
-        headers: {'Content-Type': 'application/json'},
+        headers: {
+          'Content-Type': 'application/json'
+        },
         body: JSON.stringify(data)
-      }).then(res => {
-        console.log('Request complete!', res)
+      }).then(response => {
+        if (!response.ok) {
+          throw new Error('Response was not OK');
+        } else {
+          console.log('Event logged successfully', response);
+        }
       })
 
     }
